@@ -1,0 +1,61 @@
+﻿@model PacificProject.Models.Destination
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Destination</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Country)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Country)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Place)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Place)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tour)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tour)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CountryImage)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CountryImage)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PlaceImage)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PlaceImage)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TourDayCount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TourDayCount)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.DestinationId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
